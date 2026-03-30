@@ -4,85 +4,117 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PetShop Bicho Feliz - Rações</title>
+    <meta name="description" content="Rações não perecíveis para cães e gatos.">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>🐾 PetShop Bicho Feliz</h1>
-        <p>Tudo para o seu pet com carinho e qualidade!</p>
-        <hr>
-        <nav>
-            <a href="index.html">Início</a> |
-            <a href="acessorios.html">Acessórios</a> |
-            <a href="racoes.html">Rações</a> |
-            <a href="higiene.html">Higiene e Limpeza</a> |
-            <a href="servicos.html">Serviços</a> |
-            <a href="contato.html">Contato</a>
-        </nav>
-        <hr>
+    <a class="skip-link" href="#conteudo-principal">Pular para o conteúdo principal</a>
+
+    <header class="site-header py-4">
+        <div class="container">
+            <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-center gap-3">
+                <div class="d-flex align-items-center gap-3">
+                    <div class="brand-mark" aria-hidden="true">🐾</div>
+                    <div>
+                        <p class="mb-1 text-uppercase small fw-semibold">Catálogo</p>
+                        <h1 class="h2 mb-1">Rações Não Perecíveis</h1>
+                        <p class="mb-0">Alimentação de qualidade para diferentes perfis de pets.</p>
+                    </div>
+                </div>
+                <div class="clock-chip" data-clock aria-live="polite"></div>
+            </div>
+
+            <nav class="navbar navbar-expand-lg navbar-dark px-0 pt-4" aria-label="Navegação principal">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Abrir menu de navegação">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto gap-lg-2">
+                        <li class="nav-item"><a class="nav-link" data-nav-link href="index.html">Início</a></li>
+                        <li class="nav-item"><a class="nav-link" data-nav-link href="acessorios.html">Acessórios</a></li>
+                        <li class="nav-item"><a class="nav-link" data-nav-link href="racoes.html">Rações</a></li>
+                        <li class="nav-item"><a class="nav-link" data-nav-link href="higiene.html">Higiene</a></li>
+                        <li class="nav-item"><a class="nav-link" data-nav-link href="servicos.html">Serviços</a></li>
+                        <li class="nav-item"><a class="nav-link" data-nav-link href="contato.html">Cadastro e Agendamento</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
     </header>
-    <main>
-        <h2>Rações Não Perecíveis</h2>
-        <p>Alimentação de qualidade para manter seu pet saudável e bem nutrido!</p>
-        <section>
-            <h3>Ração Premium Cães Adultos — 15kg</h3>
-            <img src="imagens/racao-caes.svg" alt="Ração Premium para cães adultos - pacote de 15kg" width="300">
-            <p>
-                <strong>Descrição:</strong> Ração premium para cães adultos de todas as raças.
-                Formulação balanceada com proteínas de alta qualidade, vitaminas e minerais essenciais.
-                Auxilia na saúde da pele, pelagem brilhante e sistema imunológico fortalecido.
-                Não contém corantes artificiais.
-            </p>
-            <p><strong>Peso:</strong> 15kg</p>
-            <p><strong>Indicação:</strong> Cães adultos de todas as raças</p>
-            <p><strong>Valor:</strong> R$ 189,90</p>
-        </section>
-        <hr>
-        <section>
-            <h3>Ração Super Premium Gatos Castrados — 10kg</h3>
-            <img src="imagens/racao-gatos.svg" alt="Ração Super Premium para gatos castrados - pacote de 10kg" width="300">
-            <p>
-                <strong>Descrição:</strong> Ração super premium desenvolvida especialmente para gatos
-                castrados. Fórmula com controle de peso e prevenção de cálculos urinários.
-                Rica em taurina e ômega 3 e 6, proporcionando uma alimentação completa e saudável.
-                Sabor frango.
-            </p>
-            <p><strong>Peso:</strong> 10kg</p>
-            <p><strong>Indicação:</strong> Gatos castrados adultos</p>
-            <p><strong>Valor:</strong> R$ 159,90</p>
-        </section>
-        <hr>
-        <section>
-            <h3>Ração Premium Filhotes Cães — 10kg</h3>
-            <img src="imagens/racao-filhotes.svg" alt="Ração Premium para filhotes de cães - pacote de 10kg" width="300">
-            <p>
-                <strong>Descrição:</strong> Ração premium especial para filhotes de cães de porte
-                pequeno e médio. Enriquecida com DHA para o desenvolvimento cerebral e visual.
-                Grãos pequenos e fáceis de mastigar, ideais para filhotes a partir de 2 meses.
-                Sabor carne e cereais.
-            </p>
-            <p><strong>Peso:</strong> 10kg</p>
-            <p><strong>Indicação:</strong> Filhotes de cães (2 a 12 meses)</p>
-            <p><strong>Valor:</strong> R$ 139,90</p>
-        </section>
-        <hr>
-        <p><a href="index.html">&larr; Voltar para a Página Inicial</a></p>
+
+    <main id="conteudo-principal" class="py-5">
+        <div class="container">
+            <section class="content-panel mb-4">
+                <span class="highlight-badge">Nutrição</span>
+                <h2 class="section-title mt-3">Rações selecionadas para cães e gatos</h2>
+                <p class="mb-0 text-secondary">A página mantém a estrutura pedida no projeto com imagem, descrição e valor para cada item.</p>
+            </section>
+
+            <section class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <article class="product-card">
+                        <img src="imagens/racao-caes.svg" alt="Pacote de ração premium para cães adultos com 15 quilos">
+                        <div class="card-body">
+                            <h3 class="h5">Ração Premium Cães Adultos</h3>
+                            <p>Ração premium com proteínas, vitaminas e minerais para cães adultos de todas as raças.</p>
+                            <p class="mb-1"><strong>Peso:</strong> 15kg</p>
+                            <p class="mb-1"><strong>Indicação:</strong> Cães adultos</p>
+                            <p class="price-tag mb-0">R$ 189,90</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <article class="product-card">
+                        <img src="imagens/racao-gatos.svg" alt="Pacote de ração super premium para gatos castrados com 10 quilos">
+                        <div class="card-body">
+                            <h3 class="h5">Ração Super Premium Gatos Castrados</h3>
+                            <p>Fórmula com controle de peso, taurina e prevenção de cálculos urinários para gatos adultos.</p>
+                            <p class="mb-1"><strong>Peso:</strong> 10kg</p>
+                            <p class="mb-1"><strong>Indicação:</strong> Gatos castrados adultos</p>
+                            <p class="price-tag mb-0">R$ 159,90</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <article class="product-card">
+                        <img src="imagens/racao-filhotes.svg" alt="Pacote de ração premium para filhotes de cães com 10 quilos">
+                        <div class="card-body">
+                            <h3 class="h5">Ração Premium Filhotes Cães</h3>
+                            <p>Ração premium enriquecida com DHA, com grãos menores para filhotes de 2 a 12 meses.</p>
+                            <p class="mb-1"><strong>Peso:</strong> 10kg</p>
+                            <p class="mb-1"><strong>Indicação:</strong> Filhotes de cães</p>
+                            <p class="price-tag mb-0">R$ 139,90</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <div class="mt-4">
+                <a class="btn btn-outline-success" href="index.html">Voltar para a página inicial</a>
+            </div>
+        </div>
     </main>
-    <footer>
-        <hr>
-        <nav>
-            <a href="index.html">Início</a> |
-            <a href="acessorios.html">Acessórios</a> |
-            <a href="racoes.html">Rações</a> |
-            <a href="higiene.html">Higiene e Limpeza</a> |
-            <a href="servicos.html">Serviços</a> |
-            <a href="contato.html">Contato</a>
-        </nav>
-        <p>
-            &copy; 2026 PetShop Bicho Feliz — Todos os direitos reservados.<br>
-            Desenvolvido por Luan — Projeto da Disciplina de Sistemas Web.<br>
-            Contato: <a href="mailto:contato@petshopbichofeliz.com.br">contato@petshopbichofeliz.com.br</a> |
-            Telefone: (11) 1234-5678
-        </p>
+
+    <footer class="site-footer py-4">
+        <div class="container">
+            <nav class="nav justify-content-center gap-2 mb-3" aria-label="Navegação de rodapé">
+                <a class="nav-link px-2" data-nav-link href="index.html">Início</a>
+                <a class="nav-link px-2" data-nav-link href="acessorios.html">Acessórios</a>
+                <a class="nav-link px-2" data-nav-link href="racoes.html">Rações</a>
+                <a class="nav-link px-2" data-nav-link href="higiene.html">Higiene</a>
+                <a class="nav-link px-2" data-nav-link href="servicos.html">Serviços</a>
+                <a class="nav-link px-2" data-nav-link href="contato.html">Cadastro e Agendamento</a>
+            </nav>
+            <p class="mb-1 text-center">&copy; <span data-current-year></span> PetShop Bicho Feliz. Projeto da disciplina de Sistemas Web.</p>
+            <p class="mb-0 text-center">Desenvolvido por Mauricio Luan. Contato: <a href="mailto:contato@petshopbichofeliz.com.br">contato@petshopbichofeliz.com.br</a> | Telefone: (11) 1234-5678</p>
+        </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>

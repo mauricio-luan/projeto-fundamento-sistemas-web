@@ -3,135 +3,219 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PetShop Bicho Feliz - Contato</title>
+    <title>PetShop Bicho Feliz - Cadastro e Agendamento</title>
+    <meta name="description" content="Cadastro do cliente e do pet com agendamento de banho ou tosa.">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>🐾 PetShop Bicho Feliz</h1>
-        <p>Tudo para o seu pet com carinho e qualidade!</p>
-        <hr>
-        <nav>
-            <a href="index.html">Início</a> |
-            <a href="acessorios.html">Acessórios</a> |
-            <a href="racoes.html">Rações</a> |
-            <a href="higiene.html">Higiene e Limpeza</a> |
-            <a href="servicos.html">Serviços</a> |
-            <a href="contato.html">Contato</a>
-        </nav>
-        <hr>
+    <a class="skip-link" href="#conteudo-principal">Pular para o conteúdo principal</a>
+
+    <header class="site-header py-4">
+        <div class="container">
+            <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-center gap-3">
+                <div class="d-flex align-items-center gap-3">
+                    <div class="brand-mark" aria-hidden="true">🐾</div>
+                    <div>
+                        <p class="mb-1 text-uppercase small fw-semibold">Atendimento</p>
+                        <h1 class="h2 mb-1">Cadastro e Agendamento</h1>
+                        <p class="mb-0">Cadastre o cliente, informe os dados do pet e escolha o atendimento.</p>
+                    </div>
+                </div>
+                <div class="clock-chip" data-clock aria-live="polite"></div>
+            </div>
+
+            <nav class="navbar navbar-expand-lg navbar-dark px-0 pt-4" aria-label="Navegação principal">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Abrir menu de navegação">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto gap-lg-2">
+                        <li class="nav-item"><a class="nav-link" data-nav-link href="index.html">Início</a></li>
+                        <li class="nav-item"><a class="nav-link" data-nav-link href="acessorios.html">Acessórios</a></li>
+                        <li class="nav-item"><a class="nav-link" data-nav-link href="racoes.html">Rações</a></li>
+                        <li class="nav-item"><a class="nav-link" data-nav-link href="higiene.html">Higiene</a></li>
+                        <li class="nav-item"><a class="nav-link" data-nav-link href="servicos.html">Serviços</a></li>
+                        <li class="nav-item"><a class="nav-link" data-nav-link href="contato.html">Cadastro e Agendamento</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
     </header>
-    <main>
-        <h2>Contato</h2>
-        <p>Entre em contato conosco! Estamos prontos para atender você e seu pet.</p>
-        <section>
-            <h3>Informações de Contato</h3>
-            <table border="1">
-                <tbody>
-                    <tr>
-                        <td><strong>Endereço</strong></td>
-                        <td>Rua dos Animais, 123 — Centro, Cidade/UF — CEP: 12345-678</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Telefone</strong></td>
-                        <td>(11) 1234-5678</td>
-                    </tr>
-                    <tr>
-                        <td><strong>WhatsApp</strong></td>
-                        <td>(11) 91234-5678</td>
-                    </tr>
-                    <tr>
-                        <td><strong>E-mail</strong></td>
-                        <td><a href="mailto:contato@petshopbichofeliz.com.br">contato@petshopbichofeliz.com.br</a></td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-        <br>
-        <section>
-            <h3>Horário de Funcionamento</h3>
-            <table border="1">
-                <thead>
-                    <tr>
-                        <th>Dia</th>
-                        <th>Horário</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Segunda a Sexta</td>
-                        <td>08h às 19h</td>
-                    </tr>
-                    <tr>
-                        <td>Sábado</td>
-                        <td>08h às 14h</td>
-                    </tr>
-                    <tr>
-                        <td>Domingo e Feriados</td>
-                        <td>Fechado</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-        <br>
-        <section>
-            <h3>Envie uma Mensagem</h3>
-            <form action="#" method="post">
-                <fieldset>
-                    <legend>Formulário de Contato</legend>
-                    <p>
-                        <label for="nome">Nome completo:</label><br>
-                        <input type="text" id="nome" name="nome" size="40" required>
-                    </p>
-                    <p>
-                        <label for="email">E-mail:</label><br>
-                        <input type="email" id="email" name="email" size="40" required>
-                    </p>
-                    <p>
-                        <label for="telefone">Telefone:</label><br>
-                        <input type="tel" id="telefone" name="telefone" size="20">
-                    </p>
-                    <p>
-                        <label for="assunto">Assunto:</label><br>
-                        <select id="assunto" name="assunto">
-                            <option value="">Selecione um assunto</option>
-                            <option value="produtos">Dúvidas sobre Produtos</option>
-                            <option value="servicos">Agendamento de Serviços</option>
-                            <option value="telebusca">Tele-Busca</option>
-                            <option value="reclamacao">Reclamação</option>
-                            <option value="sugestao">Sugestão</option>
-                            <option value="outro">Outro</option>
-                        </select>
-                    </p>
-                    <p>
-                        <label for="mensagem">Mensagem:</label><br>
-                        <textarea id="mensagem" name="mensagem" rows="6" cols="45" required></textarea>
-                    </p>
-                    <p>
-                        <input type="submit" value="Enviar Mensagem">
-                        <input type="reset" value="Limpar">
-                    </p>
-                </fieldset>
-            </form>
-        </section>
-        <hr>
-        <p><a href="index.html">&larr; Voltar para a Página Inicial</a></p>
+
+    <main id="conteudo-principal" class="py-5">
+        <div class="container">
+            <section class="row g-4 mb-4">
+                <div class="col-lg-5">
+                    <article class="content-panel h-100">
+                        <span class="highlight-badge">Contato direto</span>
+                        <h2 class="section-title mt-3">Informações do petshop</h2>
+                        <p class="mb-2"><strong>Endereço:</strong> Rua dos Animais, 123 - Centro, Cidade/UF - CEP: 12345-678</p>
+                        <p class="mb-2"><strong>Telefone:</strong> (11) 1234-5678</p>
+                        <p class="mb-2"><strong>WhatsApp:</strong> (11) 91234-5678</p>
+                        <p class="mb-2"><strong>E-mail:</strong> <a href="mailto:contato@petshopbichofeliz.com.br">contato@petshopbichofeliz.com.br</a></p>
+                        <hr>
+                        <h3 class="h5">Horário de funcionamento</h3>
+                        <p class="mb-1">Segunda a Sexta: 08h às 19h</p>
+                        <p class="mb-1">Sábado: 08h às 14h</p>
+                        <p class="mb-0">Domingo e Feriados: Fechado</p>
+                    </article>
+                </div>
+
+                <div class="col-lg-7">
+                    <section class="form-panel">
+                        <span class="highlight-badge">Formulário completo</span>
+                        <h2 class="section-title mt-3">Cadastro do cliente e do pet</h2>
+                        <p class="form-note">Use este formulário para registrar os dados e solicitar banho ou tosa com dia e horário definidos.</p>
+
+                        <form id="booking-form">
+                            <div class="row g-3 mt-1">
+                                <div class="col-12">
+                                    <h3 class="h5">Dados do cliente</h3>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label" for="cliente-nome">Nome completo</label>
+                                    <input class="form-control" type="text" id="cliente-nome" name="cliente_nome" placeholder="Digite seu nome completo" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label" for="cliente-cpf">CPF</label>
+                                    <input class="form-control" type="text" id="cliente-cpf" name="cliente_cpf" placeholder="000.000.000-00" pattern="^\d{3}\.\d{3}\.\d{3}-\d{2}$" required>
+                                </div>
+                                <div class="col-md-8">
+                                    <label class="form-label" for="cliente-endereco">Endereço</label>
+                                    <input class="form-control" type="text" id="cliente-endereco" name="cliente_endereco" placeholder="Rua, número e bairro" required>
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="form-label" for="cliente-telefone">Telefone</label>
+                                    <input class="form-control" type="tel" id="cliente-telefone" name="cliente_telefone" placeholder="(11) 91234-5678" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label" for="cliente-email">E-mail</label>
+                                    <input class="form-control" type="email" id="cliente-email" name="cliente_email" placeholder="voce@email.com" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <span class="form-label d-block">Sexo</span>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" id="sexo-feminino" name="cliente_sexo" value="Feminino" required>
+                                        <label class="form-check-label" for="sexo-feminino">Feminino</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" id="sexo-masculino" name="cliente_sexo" value="Masculino">
+                                        <label class="form-check-label" for="sexo-masculino">Masculino</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" id="sexo-outro" name="cliente_sexo" value="Outro">
+                                        <label class="form-check-label" for="sexo-outro">Outro</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 pt-2">
+                                    <h3 class="h5">Dados do pet</h3>
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="form-label" for="pet-nome">Nome do pet</label>
+                                    <input class="form-control" type="text" id="pet-nome" name="pet_nome" placeholder="Nome do pet" required>
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="form-label" for="pet-raca">Raça</label>
+                                    <input class="form-control" type="text" id="pet-raca" name="pet_raca" placeholder="Ex.: Shih-tzu" required>
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="form-label" for="pet-idade">Idade</label>
+                                    <input class="form-control" type="number" id="pet-idade" name="pet_idade" min="0" max="30" placeholder="Idade em anos" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label" for="pet-porte">Porte</label>
+                                    <select class="form-select" id="pet-porte" name="pet_porte" required>
+                                        <option value="">Selecione o porte</option>
+                                        <option value="Pequeno">Pequeno</option>
+                                        <option value="Médio">Médio</option>
+                                        <option value="Grande">Grande</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <span class="form-label d-block">Observações rápidas</span>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="obs-alergia" name="pet_obs" value="Possui alergia">
+                                        <label class="form-check-label" for="obs-alergia">Possui alergia</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="obs-medicacao" name="pet_obs" value="Usa medicação">
+                                        <label class="form-check-label" for="obs-medicacao">Usa medicação</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 pt-2">
+                                    <h3 class="h5">Serviço e agendamento</h3>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label" for="servico">Serviço desejado</label>
+                                    <select class="form-select" id="servico" name="servico" required>
+                                        <option value="">Selecione um serviço</option>
+                                        <option value="Banho">Banho</option>
+                                        <option value="Tosa">Tosa</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <span class="form-label d-block">Forma de atendimento</span>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" id="tele-busca" name="agendamento" value="Tele-busca" required>
+                                        <label class="form-check-label" for="tele-busca">Tele-busca</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" id="entrega-local" name="agendamento" value="Entrega no local">
+                                        <label class="form-check-label" for="entrega-local">Entrega do pet no local</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label" for="agendamento-data">Data do agendamento</label>
+                                    <input class="form-control" type="date" id="agendamento-data" name="agendamento_data" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label" for="agendamento-hora">Horário do agendamento</label>
+                                    <input class="form-control" type="time" id="agendamento-hora" name="agendamento_hora" min="08:00" max="19:00" required>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label" for="mensagem">Observações adicionais</label>
+                                    <textarea class="form-control" id="mensagem" name="mensagem" rows="4" placeholder="Informe detalhes importantes sobre o atendimento"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="aceite-termos" name="aceite_termos" required>
+                                        <label class="form-check-label" for="aceite-termos">Confirmo que os dados foram preenchidos corretamente.</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 d-flex flex-wrap gap-2">
+                                    <button class="btn btn-success" type="submit">Cadastrar e agendar</button>
+                                    <button class="btn btn-outline-secondary" type="reset">Limpar formulário</button>
+                                </div>
+                            </div>
+                        </form>
+
+                        <div id="booking-feedback" class="confirmation-box mt-4" aria-live="polite"></div>
+                    </section>
+                </div>
+            </section>
+        </div>
     </main>
-    <footer>
-        <hr>
-        <nav>
-            <a href="index.html">Início</a> |
-            <a href="acessorios.html">Acessórios</a> |
-            <a href="racoes.html">Rações</a> |
-            <a href="higiene.html">Higiene e Limpeza</a> |
-            <a href="servicos.html">Serviços</a> |
-            <a href="contato.html">Contato</a>
-        </nav>
-        <p>
-            &copy; 2026 PetShop Bicho Feliz — Todos os direitos reservados.<br>
-            Desenvolvido por Luan — Projeto da Disciplina de Sistemas Web.<br>
-            Contato: <a href="mailto:contato@petshopbichofeliz.com.br">contato@petshopbichofeliz.com.br</a> |
-            Telefone: (11) 1234-5678
-        </p>
+
+    <footer class="site-footer py-4">
+        <div class="container">
+            <nav class="nav justify-content-center gap-2 mb-3" aria-label="Navegação de rodapé">
+                <a class="nav-link px-2" data-nav-link href="index.html">Início</a>
+                <a class="nav-link px-2" data-nav-link href="acessorios.html">Acessórios</a>
+                <a class="nav-link px-2" data-nav-link href="racoes.html">Rações</a>
+                <a class="nav-link px-2" data-nav-link href="higiene.html">Higiene</a>
+                <a class="nav-link px-2" data-nav-link href="servicos.html">Serviços</a>
+                <a class="nav-link px-2" data-nav-link href="contato.html">Cadastro e Agendamento</a>
+            </nav>
+            <p class="mb-1 text-center">&copy; <span data-current-year></span> PetShop Bicho Feliz. Projeto da disciplina de Sistemas Web.</p>
+            <p class="mb-0 text-center">Desenvolvido por Mauricio Luan. Contato: <a href="mailto:contato@petshopbichofeliz.com.br">contato@petshopbichofeliz.com.br</a> | Telefone: (11) 1234-5678</p>
+        </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>

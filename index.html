@@ -4,97 +4,220 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PetShop Bicho Feliz - Página Inicial</title>
+    <meta name="description" content="PetShop Bicho Feliz com catálogo de produtos, serviços de banho e tosa e agendamento para seu pet.">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>🐾 PetShop Bicho Feliz</h1>
-        <p>Tudo para o seu pet com carinho e qualidade!</p>
-        <hr>
-        <nav>
-            <a href="index.html">Início</a> |
-            <a href="acessorios.html">Acessórios</a> |
-            <a href="racoes.html">Rações</a> |
-            <a href="higiene.html">Higiene e Limpeza</a> |
-            <a href="servicos.html">Serviços</a> |
-            <a href="contato.html">Contato</a>
-        </nav>
-        <hr>
+    <a class="skip-link" href="#conteudo-principal">Pular para o conteúdo principal</a>
+
+    <header class="site-header py-4">
+        <div class="container">
+            <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-center gap-3">
+                <div class="d-flex align-items-center gap-3">
+                    <div class="brand-mark" aria-hidden="true">🐾</div>
+                    <div>
+                        <p class="mb-1 text-uppercase small fw-semibold">Petshop online</p>
+                        <h1 class="h2 mb-1">PetShop Bicho Feliz</h1>
+                        <p class="mb-0">Tudo para o seu pet com carinho, cuidado e praticidade.</p>
+                    </div>
+                </div>
+                <div class="clock-chip" data-clock aria-live="polite"></div>
+            </div>
+
+            <nav class="navbar navbar-expand-lg navbar-dark px-0 pt-4" aria-label="Navegação principal">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Abrir menu de navegação">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto gap-lg-2">
+                        <li class="nav-item"><a class="nav-link" data-nav-link href="index.html">Início</a></li>
+                        <li class="nav-item"><a class="nav-link" data-nav-link href="acessorios.html">Acessórios</a></li>
+                        <li class="nav-item"><a class="nav-link" data-nav-link href="racoes.html">Rações</a></li>
+                        <li class="nav-item"><a class="nav-link" data-nav-link href="higiene.html">Higiene</a></li>
+                        <li class="nav-item"><a class="nav-link" data-nav-link href="servicos.html">Serviços</a></li>
+                        <li class="nav-item"><a class="nav-link" data-nav-link href="contato.html">Cadastro e Agendamento</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
     </header>
-    <main>
-        <h2>Bem-vindo ao PetShop Bicho Feliz!</h2>
-        <p>
-            Somos um petshop dedicado ao bem-estar do seu animal de estimação.
-            Oferecemos produtos de qualidade nas categorias de <strong>acessórios</strong>,
-            <strong>rações não perecíveis</strong> e <strong>higiene e limpeza</strong>,
-            além de serviços de <strong>banho e tosa</strong> com opção de tele-busca.
-        </p>
-        <h3>Nossas Categorias de Produtos</h3>
-        <ul>
-            <li><a href="acessorios.html">Acessórios</a> — Roupas, brinquedos, camas e muito mais.</li>
-            <li><a href="racoes.html">Rações Não Perecíveis</a> — Alimentação saudável para cães e gatos.</li>
-            <li><a href="higiene.html">Higiene e Limpeza</a> — Tapetes higiênicos, fraldas e outros itens.</li>
-        </ul>
-        <h3>Nossos Serviços</h3>
-        <ul>
-            <li><a href="servicos.html">Banho e Tosa</a> — Com ou sem tele-busca.</li>
-        </ul>
-        <h3>Destaques</h3>
-        <table border="1">
-            <caption>Produtos em Destaque</caption>
-            <thead>
-                <tr>
-                    <th>Produto</th>
-                    <th>Categoria</th>
-                    <th>Valor</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Cama Pet Confort</td>
-                    <td>Acessórios</td>
-                    <td>R$ 129,90</td>
-                </tr>
-                <tr>
-                    <td>Ração Premium Cães Adultos 15kg</td>
-                    <td>Rações</td>
-                    <td>R$ 189,90</td>
-                </tr>
-                <tr>
-                    <td>Tapete Higiênico (30 unidades)</td>
-                    <td>Higiene e Limpeza</td>
-                    <td>R$ 49,90</td>
-                </tr>
-            </tbody>
-        </table>
-        <br>
-        <p>
-            <strong>Horário de Funcionamento:</strong><br>
-            Segunda a Sexta: 08h às 19h<br>
-            Sábado: 08h às 14h<br>
-            Domingo e Feriados: Fechado
-        </p>
-        <p>
-            <strong>Endereço:</strong><br>
-            Rua dos Animais, 123 Centro<br>
-            Cidade/UF CEP: 12345-678
-        </p>
+
+    <main id="conteudo-principal" class="py-5">
+        <div class="container">
+            <section class="hero-panel mb-5">
+                <div class="row g-0 align-items-center">
+                    <div class="col-lg-5">
+                        <div class="hero-copy">
+                            <h2 class="display-6 fw-bold mt-3">Mais conforto para o seu pet, da escolha do produto ao agendamento.</h2>
+                            <p class="lead text-secondary mt-3">
+                                Navegue pelas categorias, confira os serviços de banho e tosa e faça o cadastro do cliente e do pet com agendamento simples.
+                            </p>
+                            <div class="d-flex flex-wrap gap-2 mt-4">
+                                <a class="btn btn-success btn-lg" href="contato.html">Cadastrar e agendar</a>
+                                <a class="btn btn-outline-success btn-lg" href="servicos.html">Ver serviços</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div id="petshopCarousel" class="carousel slide" data-bs-ride="carousel" aria-label="Carrossel com produtos em destaque">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#petshopCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Mostrar destaque de acessórios"></button>
+                                <button type="button" data-bs-target="#petshopCarousel" data-bs-slide-to="1" aria-label="Mostrar destaque de rações"></button>
+                                <button type="button" data-bs-target="#petshopCarousel" data-bs-slide-to="2" aria-label="Mostrar destaque de higiene"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="imagens/cama-pet.svg" class="d-block w-100" alt="Cama pet em destaque na vitrine do petshop">
+                                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-4 p-3">
+                                        <h3 class="h5">Acessórios com conforto</h3>
+                                        <p class="mb-0">Camas, brinquedos e roupas para deixar o dia do seu pet mais feliz.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="imagens/racao-caes.svg" class="d-block w-100" alt="Pacote de ração premium em destaque">
+                                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-4 p-3">
+                                        <h3 class="h5">Rações selecionadas</h3>
+                                        <p class="mb-0">Opções para cães adultos, filhotes e gatos com foco em qualidade.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="imagens/tapete-higienico.svg" class="d-block w-100" alt="Produtos de higiene em destaque">
+                                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-4 p-3">
+                                        <h3 class="h5">Higiene e cuidado diário</h3>
+                                        <p class="mb-0">Itens essenciais para manter seu pet limpo, confortável e protegido.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#petshopCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#petshopCarousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Próximo</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-5">
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <article class="info-card">
+                            <h3 class="h4 section-title">Produtos em destaque</h3>
+                            <p>Explore acessórios, rações não perecíveis e produtos de higiene com imagens, descrições e valores.</p>
+                            <a class="btn btn-outline-success" href="acessorios.html">Ver categorias</a>
+                        </article>
+                    </div>
+                    <div class="col-md-4">
+                        <article class="info-card">
+                            <h3 class="h4 section-title">Serviços do petshop</h3>
+                            <p>Banho e tosa com opção de tele-busca ou entrega do pet no local, de forma agendada.</p>
+                            <a class="btn btn-outline-success" href="servicos.html">Consultar valores</a>
+                        </article>
+                    </div>
+                    <div class="col-md-4">
+                        <article class="info-card">
+                            <h3 class="h4 section-title">Cadastro e agendamento</h3>
+                            <p>Preencha os dados do cliente e do pet e escolha o melhor dia e horário para atendimento.</p>
+                            <a class="btn btn-success" href="contato.html">Fazer cadastro</a>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-panel mb-5">
+                <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-center gap-3 mb-4">
+                    <div>
+                        <h2 class="section-title mb-1">Resumo da loja</h2>
+                        <p class="mb-0 text-secondary">Uma visão rápida das categorias, horários e localização.</p>
+                    </div>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <h3 class="h5">Categorias de produtos</h3>
+                        <ul class="list-group">
+                            <li class="list-group-item"><a href="acessorios.html">Acessórios</a> com roupas, brinquedos, camas e itens de conforto.</li>
+                            <li class="list-group-item"><a href="racoes.html">Rações não perecíveis</a> para cães e gatos.</li>
+                            <li class="list-group-item"><a href="higiene.html">Higiene e limpeza</a> com tapetes, fraldas e shampoo.</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <h3 class="h5">Produtos em destaque</h3>
+                        <div class="table-responsive">
+                            <table class="table table-striped table-bordered align-middle">
+                                <caption>Produtos em destaque do PetShop Bicho Feliz</caption>
+                                <thead class="table-success">
+                                    <tr>
+                                        <th scope="col">Produto</th>
+                                        <th scope="col">Categoria</th>
+                                        <th scope="col">Valor</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Cama Pet Confort</td>
+                                        <td>Acessórios</td>
+                                        <td>R$ 129,90</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ração Premium Cães Adultos 15kg</td>
+                                        <td>Rações</td>
+                                        <td>R$ 189,90</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tapete Higiênico 30 unidades</td>
+                                        <td>Higiene e Limpeza</td>
+                                        <td>R$ 49,90</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row g-4 mt-1">
+                    <div class="col-md-6">
+                        <div class="info-card">
+                            <h3 class="h5">Horário de funcionamento</h3>
+                            <p class="mb-1">Segunda a Sexta: 08h às 19h</p>
+                            <p class="mb-1">Sábado: 08h às 14h</p>
+                            <p class="mb-0">Domingo e Feriados: Fechado</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="info-card">
+                            <h3 class="h5">Endereço</h3>
+                            <p class="mb-1">Rua dos Animais, 123 - Centro</p>
+                            <p class="mb-1">Cidade/UF - CEP: 12345-678</p>
+                            <p class="mb-0">Telefone: (11) 1234-5678</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
-    <footer>
-        <hr>
-        <nav>
-            <a href="index.html">Início</a> |
-            <a href="acessorios.html">Acessórios</a> |
-            <a href="racoes.html">Rações</a> |
-            <a href="higiene.html">Higiene e Limpeza</a> |
-            <a href="servicos.html">Serviços</a> |
-            <a href="contato.html">Contato</a>
-        </nav>
-        <p>
-            &copy; 2026 PetShop Bicho Feliz — Todos os direitos reservados.<br>
-            Desenvolvido por Mauricio Luan — Projeto da Disciplina de Sistemas Web.<br>
-            Contato: <a href="mailto:contato@petshopbichofeliz.com.br">contato@petshopbichofeliz.com.br</a> |
-            Telefone: (11) 1234-5678
-        </p>
+
+    <footer class="site-footer py-4">
+        <div class="container">
+            <nav class="nav justify-content-center gap-2 mb-3" aria-label="Navegação de rodapé">
+                <a class="nav-link px-2" data-nav-link href="index.html">Início</a>
+                <a class="nav-link px-2" data-nav-link href="acessorios.html">Acessórios</a>
+                <a class="nav-link px-2" data-nav-link href="racoes.html">Rações</a>
+                <a class="nav-link px-2" data-nav-link href="higiene.html">Higiene</a>
+                <a class="nav-link px-2" data-nav-link href="servicos.html">Serviços</a>
+                <a class="nav-link px-2" data-nav-link href="contato.html">Cadastro e Agendamento</a>
+            </nav>
+            <p class="mb-1 text-center">&copy; <span data-current-year></span> PetShop Bicho Feliz. Projeto da disciplina de Sistemas Web.</p>
+            <p class="mb-0 text-center">Desenvolvido por Mauricio Luan. Contato: <a href="mailto:contato@petshopbichofeliz.com.br">contato@petshopbichofeliz.com.br</a> | Telefone: (11) 1234-5678</p>
+        </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>

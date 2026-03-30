@@ -4,168 +4,186 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PetShop Bicho Feliz - Serviços</title>
+    <meta name="description" content="Serviços de banho e tosa com opção de tele-busca ou entrega do pet no local.">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>🐾 PetShop Bicho Feliz</h1>
-        <p>Tudo para o seu pet com carinho e qualidade!</p>
-        <hr>
-        <nav>
-            <a href="index.html">Início</a> |
-            <a href="acessorios.html">Acessórios</a> |
-            <a href="racoes.html">Rações</a> |
-            <a href="higiene.html">Higiene e Limpeza</a> |
-            <a href="servicos.html">Serviços</a> |
-            <a href="contato.html">Contato</a>
-        </nav>
-        <hr>
+    <a class="skip-link" href="#conteudo-principal">Pular para o conteúdo principal</a>
+
+    <header class="site-header py-4">
+        <div class="container">
+            <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-center gap-3">
+                <div class="d-flex align-items-center gap-3">
+                    <div class="brand-mark" aria-hidden="true">🐾</div>
+                    <div>
+                        <p class="mb-1 text-uppercase small fw-semibold">Serviços</p>
+                        <h1 class="h2 mb-1">Banho e Tosa</h1>
+                        <p class="mb-0">Atendimento com agendamento, com opção de tele-busca ou entrega no local.</p>
+                    </div>
+                </div>
+                <div class="clock-chip" data-clock aria-live="polite"></div>
+            </div>
+
+            <nav class="navbar navbar-expand-lg navbar-dark px-0 pt-4" aria-label="Navegação principal">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Abrir menu de navegação">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto gap-lg-2">
+                        <li class="nav-item"><a class="nav-link" data-nav-link href="index.html">Início</a></li>
+                        <li class="nav-item"><a class="nav-link" data-nav-link href="acessorios.html">Acessórios</a></li>
+                        <li class="nav-item"><a class="nav-link" data-nav-link href="racoes.html">Rações</a></li>
+                        <li class="nav-item"><a class="nav-link" data-nav-link href="higiene.html">Higiene</a></li>
+                        <li class="nav-item"><a class="nav-link" data-nav-link href="servicos.html">Serviços</a></li>
+                        <li class="nav-item"><a class="nav-link" data-nav-link href="contato.html">Cadastro e Agendamento</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
     </header>
-    <main>
-        <h2>Serviços</h2>
-        <p>
-            Oferecemos serviços profissionais de banho e tosa para cães e gatos,
-            com a opção de tele-busca para sua comodidade!
-        </p>
-        <section>
-            <h3>Banho Completo</h3>
-            <p>
-                <strong>Descrição:</strong> Banho completo com shampoo e condicionador específicos
-                para o tipo de pelagem do seu pet. Inclui secagem, escovação, limpeza de ouvidos,
-                corte de unhas e perfume. Realizado por profissionais qualificados com todo cuidado
-                e carinho.
-            </p>
-            <table border="1">
-                <caption>Valores — Banho Completo</caption>
-                <thead>
-                    <tr>
-                        <th>Porte do Animal</th>
-                        <th>Sem Tele-Busca</th>
-                        <th>Com Tele-Busca</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Pequeno (até 10kg)</td>
-                        <td>R$ 50,00</td>
-                        <td>R$ 70,00</td>
-                    </tr>
-                    <tr>
-                        <td>Médio (10kg a 25kg)</td>
-                        <td>R$ 70,00</td>
-                        <td>R$ 90,00</td>
-                    </tr>
-                    <tr>
-                        <td>Grande (acima de 25kg)</td>
-                        <td>R$ 90,00</td>
-                        <td>R$ 120,00</td>
-                    </tr>
-                </tbody>
-            </table>
-            <p><strong>Tele-Busca:</strong> Buscamos e devolvemos seu pet no conforto da sua casa! (Taxa adicional inclusa na tabela acima.)</p>
-        </section>
-        <hr>
-        <section>
-            <h3>Tosa</h3>
-            <p>
-                <strong>Descrição:</strong> Serviço de tosa profissional, com opções de tosa higiênica
-                e tosa completa na máquina ou tesoura. Nossos tosadores são experientes e respeitam
-                as características de cada raça. Inclui banho completo.
-            </p>
-            <h4>Tosa Higiênica</h4>
-            <p>Aparação das regiões íntimas, patas e focinho para maior higiene e conforto.</p>
-            <table border="1">
-                <caption>Valores — Tosa Higiênica</caption>
-                <thead>
-                    <tr>
-                        <th>Porte do Animal</th>
-                        <th>Sem Tele-Busca</th>
-                        <th>Com Tele-Busca</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Pequeno (até 10kg)</td>
-                        <td>R$ 65,00</td>
-                        <td>R$ 85,00</td>
-                    </tr>
-                    <tr>
-                        <td>Médio (10kg a 25kg)</td>
-                        <td>R$ 85,00</td>
-                        <td>R$ 105,00</td>
-                    </tr>
-                    <tr>
-                        <td>Grande (acima de 25kg)</td>
-                        <td>R$ 110,00</td>
-                        <td>R$ 140,00</td>
-                    </tr>
-                </tbody>
-            </table>
-            <br>
-            <h4>Tosa Completa (Máquina ou Tesoura)</h4>
-            <p>Tosa completa do corpo inteiro, com acabamento profissional. Inclui banho completo.</p>
-            <table border="1">
-                <caption>Valores — Tosa Completa</caption>
-                <thead>
-                    <tr>
-                        <th>Porte do Animal</th>
-                        <th>Sem Tele-Busca</th>
-                        <th>Com Tele-Busca</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Pequeno (até 10kg)</td>
-                        <td>R$ 80,00</td>
-                        <td>R$ 100,00</td>
-                    </tr>
-                    <tr>
-                        <td>Médio (10kg a 25kg)</td>
-                        <td>R$ 110,00</td>
-                        <td>R$ 130,00</td>
-                    </tr>
-                    <tr>
-                        <td>Grande (acima de 25kg)</td>
-                        <td>R$ 140,00</td>
-                        <td>R$ 170,00</td>
-                    </tr>
-                </tbody>
-            </table>
-            <p><strong>Tele-Busca:</strong> Buscamos e devolvemos seu pet no conforto da sua casa!</p>
-        </section>
-        <hr>
-        <section>
-            <h3>Informações Importantes</h3>
-            <ul>
-                <li>Todos os serviços são realizados por profissionais qualificados.</li>
-                <li>Agendamentos podem ser feitos por telefone ou presencialmente.</li>
-                <li>O serviço de tele-busca está disponível em um raio de até 15km do petshop.</li>
-                <li>Animais devem estar com a vacinação em dia.</li>
-                <li>Tempo médio de atendimento: 1h a 2h dependendo do porte e serviço.</li>
-            </ul>
-            <p>
-                <strong>Agende agora:</strong> Ligue para <strong>(11) 1234-5678</strong> ou
-                visite nossa <a href="contato.html">página de contato</a>.
-            </p>
-        </section>
-        <hr>
-        <p><a href="index.html">&larr; Voltar para a Página Inicial</a></p>
+
+    <main id="conteudo-principal" class="py-5">
+        <div class="container">
+            <section class="content-panel mb-4">
+                <span class="highlight-badge">Agendamento disponível</span>
+                <h2 class="section-title mt-3">Serviços oferecidos pelo petshop</h2>
+                <p class="mb-0 text-secondary">Os dois serviços exigidos na fase 2 continuam disponíveis com preços por porte e modalidade de atendimento.</p>
+            </section>
+
+            <section class="content-panel mb-4">
+                <h3 class="h4">Banho Completo</h3>
+                <p>Banho com shampoo e condicionador específicos, secagem, escovação, limpeza de ouvidos, corte de unhas e perfume.</p>
+                <div class="table-responsive">
+                    <table class="table table-bordered table-striped service-table">
+                        <caption>Valores do banho completo</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Porte do animal</th>
+                                <th scope="col">Sem tele-busca</th>
+                                <th scope="col">Com tele-busca</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Pequeno (até 10kg)</td>
+                                <td>R$ 50,00</td>
+                                <td>R$ 70,00</td>
+                            </tr>
+                            <tr>
+                                <td>Médio (10kg a 25kg)</td>
+                                <td>R$ 70,00</td>
+                                <td>R$ 90,00</td>
+                            </tr>
+                            <tr>
+                                <td>Grande (acima de 25kg)</td>
+                                <td>R$ 90,00</td>
+                                <td>R$ 120,00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section class="content-panel mb-4">
+                <h3 class="h4">Tosa</h3>
+                <p>Tosa profissional com versões higiênica e completa, incluindo banho no atendimento.</p>
+
+                <h4 class="h5 mt-4">Tosa Higiênica</h4>
+                <p>Aparação das regiões íntimas, patas e focinho para maior higiene e conforto.</p>
+                <div class="table-responsive">
+                    <table class="table table-bordered table-striped service-table">
+                        <caption>Valores da tosa higiênica</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Porte do animal</th>
+                                <th scope="col">Sem tele-busca</th>
+                                <th scope="col">Com tele-busca</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Pequeno (até 10kg)</td>
+                                <td>R$ 65,00</td>
+                                <td>R$ 85,00</td>
+                            </tr>
+                            <tr>
+                                <td>Médio (10kg a 25kg)</td>
+                                <td>R$ 85,00</td>
+                                <td>R$ 105,00</td>
+                            </tr>
+                            <tr>
+                                <td>Grande (acima de 25kg)</td>
+                                <td>R$ 110,00</td>
+                                <td>R$ 140,00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h4 class="h5 mt-4">Tosa Completa</h4>
+                <p>Tosa do corpo inteiro com acabamento profissional, na máquina ou tesoura.</p>
+                <div class="table-responsive">
+                    <table class="table table-bordered table-striped service-table">
+                        <caption>Valores da tosa completa</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Porte do animal</th>
+                                <th scope="col">Sem tele-busca</th>
+                                <th scope="col">Com tele-busca</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Pequeno (até 10kg)</td>
+                                <td>R$ 80,00</td>
+                                <td>R$ 100,00</td>
+                            </tr>
+                            <tr>
+                                <td>Médio (10kg a 25kg)</td>
+                                <td>R$ 110,00</td>
+                                <td>R$ 130,00</td>
+                            </tr>
+                            <tr>
+                                <td>Grande (acima de 25kg)</td>
+                                <td>R$ 140,00</td>
+                                <td>R$ 170,00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section class="content-panel">
+                <h3 class="h4">Informações importantes</h3>
+                <ul class="mb-4">
+                    <li>Os serviços são realizados por profissionais qualificados.</li>
+                    <li>O agendamento pode ser feito com tele-busca ou entrega do pet no local.</li>
+                    <li>O serviço de tele-busca atende um raio de até 15km.</li>
+                    <li>Animais devem estar com a vacinação em dia.</li>
+                </ul>
+                <a class="btn btn-success" href="contato.html">Cadastrar cliente e pet</a>
+            </section>
+        </div>
     </main>
-    <footer>
-        <hr>
-        <nav>
-            <a href="index.html">Início</a> |
-            <a href="acessorios.html">Acessórios</a> |
-            <a href="racoes.html">Rações</a> |
-            <a href="higiene.html">Higiene e Limpeza</a> |
-            <a href="servicos.html">Serviços</a> |
-            <a href="contato.html">Contato</a>
-        </nav>
-        <p>
-            &copy; 2026 PetShop Bicho Feliz — Todos os direitos reservados.<br>
-            Desenvolvido por Luan — Projeto da Disciplina de Sistemas Web.<br>
-            Contato: <a href="mailto:contato@petshopbichofeliz.com.br">contato@petshopbichofeliz.com.br</a> |
-            Telefone: (11) 1234-5678
-        </p>
+
+    <footer class="site-footer py-4">
+        <div class="container">
+            <nav class="nav justify-content-center gap-2 mb-3" aria-label="Navegação de rodapé">
+                <a class="nav-link px-2" data-nav-link href="index.html">Início</a>
+                <a class="nav-link px-2" data-nav-link href="acessorios.html">Acessórios</a>
+                <a class="nav-link px-2" data-nav-link href="racoes.html">Rações</a>
+                <a class="nav-link px-2" data-nav-link href="higiene.html">Higiene</a>
+                <a class="nav-link px-2" data-nav-link href="servicos.html">Serviços</a>
+                <a class="nav-link px-2" data-nav-link href="contato.html">Cadastro e Agendamento</a>
+            </nav>
+            <p class="mb-1 text-center">&copy; <span data-current-year></span> PetShop Bicho Feliz. Projeto da disciplina de Sistemas Web.</p>
+            <p class="mb-0 text-center">Desenvolvido por Mauricio Luan. Contato: <a href="mailto:contato@petshopbichofeliz.com.br">contato@petshopbichofeliz.com.br</a> | Telefone: (11) 1234-5678</p>
+        </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>
